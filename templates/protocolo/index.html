@@ -1,5 +1,18 @@
-{% extends 'protocolo/base.html' %}
+{% extends 'protocolo/base_list.html' %}
 
-{% block content %}
-  <h1>Index</h1>
+{% block page-header %}
+</br>
+  <h2>Novo Requerimento:</h2>
+  <ul class="nav">
+	  <li class="nav-item">
+		  <a class="nav-link" href="{% url 'requerimento_matricula_novo' %}">Matrícula</a>
+	  </li>
+	  <li class="nav-item">
+		  <a class="nav-link" href="{% url 'requerimento_alteracao_novo' %}">Alteração</a>
+	  </li>
+	  <li class="nav-item">
+		  <a class="nav-link" href="{% url 'requerimento_boletim_novo' %}">Boletim</a>
+	  </li>
+</br>
 {% endblock %}
+

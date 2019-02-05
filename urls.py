@@ -6,7 +6,8 @@ from .filters import RequerimentoFilter
 
 # precisa adicionar o include no urls.py do django
 urlpatterns = [
-    path('', views.index, name='index'),
+    #path('', views.index, name='index'),
+    path('', views.Index.as_view(), name='index'),
 
     # aluno
     path('aluno/', views.AlunoList.as_view(), name='aluno_lista'),

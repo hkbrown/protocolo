@@ -91,8 +91,11 @@ class RequerimentoOutrosUpdate(CrispyUpdateView):
 
 
 # Resto
-def index(request):
-    return render(request, 'protocolo/index.html', {})
+class Index(ListView):
+    model = Requerimento
+    template_name = 'protocolo/index.html'
+#def index(request):
+#    return render(request, 'protocolo/index.html', {})
 
 def protocoloavulso_novo(request):
     if request.method == 'POST':
