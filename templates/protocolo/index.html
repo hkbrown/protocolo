@@ -2,16 +2,21 @@
 
 {% block page-header %}
 </br>
-  <h2>Novo Requerimento:</h2>
-  <ul class="nav">
+  <ul class="nav justify-content-center">
+	  <li class="nav-item">
+		  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Novo Requerimento:</a>
+	  </li>
 	  <li class="nav-item">
 		  <a class="nav-link" href="{% url 'requerimento_matricula_novo' %}">Matrícula</a>
+	  </li>
+	  <li class="nav-item">
+		  <a class="nav-link" href="{% url 'requerimento_boletim_novo' %}">Boletim</a>
 	  </li>
 	  <li class="nav-item">
 		  <a class="nav-link" href="{% url 'requerimento_alteracao_novo' %}">Alteração</a>
 	  </li>
 	  <li class="nav-item">
-		  <a class="nav-link" href="{% url 'requerimento_boletim_novo' %}">Boletim</a>
+		  <a class="nav-link" href="{% url 'requerimento_outros_novo' %}">Outros</a>
 	  </li>
 </br>
 {% endblock %}
